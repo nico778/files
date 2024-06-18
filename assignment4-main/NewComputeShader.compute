@@ -75,7 +75,7 @@ RayHit CreateRayHit()
 
 //intersection
 void IntersectGroundPlane(Ray ray, inout RayHit bestHit)
-{ake sure we have a
+{
     //calculate distance along the ray where the ground plane is intersected
     float t = -ray.origin.y / ray.direction.y;
     if (t > 0 && t < bestHit.distance)
